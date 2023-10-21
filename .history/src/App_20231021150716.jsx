@@ -22,9 +22,9 @@ const files = {
 };
 
 function App() {
-  const editorRef = useRef(null);
-  const [text, setText] = useState("");
   const [filename, setFilename] = useState("index.html");
+  const [text, setText] = useState("");
+  const editorRef = useRef(null);
   const [editorOptions, setEditorOptions] = useState({ readOnly: false });
 
   const file = files[filename];
@@ -38,6 +38,14 @@ function App() {
 
   function handleEditor(editor, monaco) {
     editorRef.current = editor;
+    // Get the model for the editor
+    const model = editor.getModel();
+
+    if (model) {
+      // Set the cursor position to the beginning of the second line (line 2, column 1)
+      editor.setPosition({ lineNumber: 2, column: 1 });
+    }
+    editor.focus();
   }
 
   const copyCodeToClipboard = () => {
@@ -96,24 +104,24 @@ function App() {
         <button onClick={loadEditorContent}>Load</button>
       </div>
       <Editor
-        width="70%"
-        height="70vh"
-        value={text}
-        theme="vs-dark"
-        path={file.name}
         className="editor_"
+        height="70vh"
+        width="70%"
+        theme="vs-dark"
         onMount={handleEditor}
-        onChange={handleEditorChange}
-        defaultLanguage={file.language}
-        defaultValue={`${file.value} \n`}
+        path={file.name}
+        value={text}
         options={{ ...editorOptions, fontSize: 16 }}
+        defaultLanguage={file.language}
+        defaultValue={file.value}
+        onChange={handleEditorChange}
       />
       <textarea
         name=""
+        id="textarea"
         cols="30"
         rows="10"
         disabled
-        id="textarea"
         placeholder="Copy text display here..."
       ></textarea>
     </div>

@@ -103,17 +103,17 @@ function App() {
         path={file.name}
         className="editor_"
         onMount={handleEditor}
-        onChange={handleEditorChange}
+        options={{ ...editorOptions, fontSize: 16 }}
         defaultLanguage={file.language}
         defaultValue={`${file.value} \n`}
-        options={{ ...editorOptions, fontSize: 16 }}
+        onChange={handleEditorChange}
       />
       <textarea
         name=""
+        id="textarea"
         cols="30"
         rows="10"
         disabled
-        id="textarea"
         placeholder="Copy text display here..."
       ></textarea>
     </div>

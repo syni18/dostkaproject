@@ -97,23 +97,23 @@ function App() {
       </div>
       <Editor
         width="70%"
-        height="70vh"
-        value={text}
-        theme="vs-dark"
-        path={file.name}
         className="editor_"
+        height="70vh"
+        theme="vs-dark"
         onMount={handleEditor}
-        onChange={handleEditorChange}
+        path={file.name}
+        value={text}
+        options={{ ...editorOptions, fontSize: 16 }}
         defaultLanguage={file.language}
         defaultValue={`${file.value} \n`}
-        options={{ ...editorOptions, fontSize: 16 }}
+        onChange={handleEditorChange}
       />
       <textarea
         name=""
+        id="textarea"
         cols="30"
         rows="10"
         disabled
-        id="textarea"
         placeholder="Copy text display here..."
       ></textarea>
     </div>

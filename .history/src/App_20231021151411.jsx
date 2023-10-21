@@ -110,10 +110,10 @@ function App() {
       />
       <textarea
         name=""
+        id="textarea"
         cols="30"
         rows="10"
         disabled
-        id="textarea"
         placeholder="Copy text display here..."
       ></textarea>
     </div>
