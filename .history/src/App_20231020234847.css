@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.change_btn {
+  display: flex;
+  margin-bottom: 10px;
+
+}
+.App {
+  position: relative;
+}
+.change_btn button {
+  margin: 10px 20px;
+  cursor: pointer;
+  padding: 5px 15px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+}
+.change_btn button:hover{
+  border: 2px solid rgb(2, 184, 2);
+  margin: 8px 19px;
+}
+.editor_ {
+  border-radius: 10px;
+  margin-left: 20px;
+}
+textarea {
+  position: absolute;
+  top: 58px;
+  right: 20px;
+  width: 27%;
+  height: 91%;
+  resize: none;
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  /* Adjust the styles to fit smaller screens */
+  .change_btn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .change_btn button {
+    margin: 10px 15px; /* Reduce horizontal margin for buttons */
+  }
+  .change_btn button:nth-last-child(){
+    margin: 10px 30px;
+  }
+
+  section {
+    width: 100% !important;
+  }
+  .editor_ {
+    margin-left: 0; /* Remove left margin for the editor */
+    height: 50vh;
+  }
+
+  textarea {
+    position: relative; /* Remove absolute positioning on textarea */
+    top: 0;
+    right: 0;
+    width: 100%; /* Expand textarea to full width */
+    height: auto; /* Allow textarea to expand with content */
+    margin-top: 10px; /* Add margin between buttons and textarea */
+  }
+}
+
+
+
+
+
+

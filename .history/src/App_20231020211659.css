@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.change_btn {
+  display: flex;
+
+}
+.change_btn button {
+  margin: 10px 20px;
+  cursor: pointer;
+  padding: 5px 15px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+}
+.change_btn button:

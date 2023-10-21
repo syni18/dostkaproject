@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.change_btn {
+  display: flex;
+
+}
+.change_btn button {
+  margin: 10px 20px;
+  padding: 5px 15px;
+  background-color: white;
+
+}
