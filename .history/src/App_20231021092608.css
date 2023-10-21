@@ -110,7 +110,7 @@ textarea {
     position: relative; /* Remove absolute positioning on textarea */
     top: 0;
     right: 0;
-    width: 98%; /* Expand textarea to full width */
+    width: 95 /* Expand textarea to full width */
     height: auto; /* Allow textarea to expand with content */
     margin-top: 10px; 
     padding: 0 5px;
