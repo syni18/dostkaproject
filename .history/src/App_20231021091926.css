@@ -63,9 +63,6 @@ textarea {
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
   /* Adjust the styles to fit smaller screens */
-  .App {
-    margin-left: 7px;
-  }
   .App h1 {
     margin-left: 10px;
     width: max-content;
@@ -78,11 +75,11 @@ textarea {
   .change_btn {
     /* margin-top: 20px; */
     display: grid;
-    grid-template-columns: repeat(3, 0fr);
+    grid-template-columns: repeat(3, 2fr);
   }
 
   .change_btn button {
-    margin: 10px 5px; /* Reduce horizontal margin for buttons */
+    margin: 10px 15px; /* Reduce horizontal margin for buttons */
   }
 
   section {

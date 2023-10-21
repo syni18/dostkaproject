@@ -64,7 +64,7 @@ textarea {
 @media (max-width: 768px) {
   /* Adjust the styles to fit smaller screens */
   .App {
-    margin-left: 7px;
+    margin-left: 1px;
   }
   .App h1 {
     margin-left: 10px;
