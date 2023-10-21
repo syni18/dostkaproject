@@ -95,7 +95,7 @@ textarea {
   }
 .monaco-scrollable-element{
   left: 40px !important;
-  width: 347px !important;
+  width: 100%;
 }
   .margin-view-overlays {
     background-color: rgb(3, 99, 99);
@@ -104,9 +104,6 @@ textarea {
   }
   .line-numbers{
     width: 20px !important;
-  }
-  .invisible{
-    width: 10px !important;
   }
   .slider-mouseover {
     position:initial !important;

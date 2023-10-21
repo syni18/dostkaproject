@@ -77,39 +77,25 @@ textarea {
   }
   .change_btn {
     /* margin-top: 20px; */
-    /* border: 1px solid black; */
-    width: 98%;
-    /* justify-content: space-evenly; */
+    border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(2, 0fr);
   }
 
   .change_btn button {
-    width: max-content;
-    /* margin: 10px 5px;  */
+    margin: 10px 5px; /* Reduce horizontal margin for buttons */
   }
 
   section {
     height: 60vh !important;
     width: 100vw !important;
   }
-.monaco-scrollable-element{
-  left: 40px !important;
-  width: 347px !important;
-}
+
   .margin-view-overlays {
-    background-color: rgb(3, 99, 99);
-    width: 30px !important;
-    color: white;
+    width: 40px !important;
   }
   .line-numbers{
-    width: 20px !important;
-  }
-  .invisible{
-    width: 10px !important;
-  }
-  .slider-mouseover {
-    position:initial !important;
+    width: 30px !important;
   }
   .margin {
     width: 40px !important;

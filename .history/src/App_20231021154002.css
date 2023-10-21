@@ -93,20 +93,13 @@ textarea {
     height: 60vh !important;
     width: 100vw !important;
   }
-.monaco-scrollable-element{
-  left: 40px !important;
-  width: 347px !important;
-}
+.monaco-scrollable-element editor-scrollable vs-dark
   .margin-view-overlays {
-    background-color: rgb(3, 99, 99);
+    background-color: aqua;
     width: 30px !important;
-    color: white;
   }
   .line-numbers{
     width: 20px !important;
-  }
-  .invisible{
-    width: 10px !important;
   }
   .slider-mouseover {
     position:initial !important;
